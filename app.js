@@ -1,10 +1,10 @@
 // Get references to HTML elements: the form, input field, and list container
-const form = document.getElementById('item-form');
+const itemForm = document.getElementById('item-form');
 const input = document.getElementById('item-input');
 const list = document.getElementById('item-list');
 
 // Base URL for the JSON server API
-const baseURL = 'http://localhost:3001/items';
+const baseURL = 'http://localhost:3000/items';
 
 /**
  * Fetch all items from the API and display them in the list
@@ -39,7 +39,7 @@ function renderItem(item) {
 /**
  * Handle form submission to add a new item
  */
-form.addEventListener('submit', e => {
+itemForm.addEventListener('submit', e => {
   e.preventDefault();                               // Prevent page reload
   const newItem = { name: input.value };            // Create item object
 
@@ -51,7 +51,7 @@ form.addEventListener('submit', e => {
     .then(res => res.json())                        // Get the created item back
     .then(addedItem => {
       renderItem(addedItem);                        // Render new item on the list
-      form.reset();                                 // Clear form input
+      itemForm.reset();                                 // Clear form input
     });
 });
 
@@ -67,3 +67,4 @@ function deleteItem(id) {
 
 // Load all items on initial page load
 loadItems();
+window.deleteItem = deleteItem;

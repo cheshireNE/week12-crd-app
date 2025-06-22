@@ -1,8 +1,46 @@
 {
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Alice Monroe",
+      "book": "Pride and Prejudice",
+      "phone": "555-123-4567"
+    },
+    {
+      "id": 2,
+      "name": "James Grant",
+      "book": "The Hobbit",
+      "phone": "555-987-6543"
+    },
+    {
+      "id": 3,
+      "name": "Sara Kim",
+      "book": "To Kill a Mockingbird",
+      "phone": "555-456-7890"
+    },
+    {
+      "id": 4,
+      "name": "Daniil Makarov",
+      "book": "White Fang",
+      "phone": "787-555-4040"
+    },
+    {
+      "id": "4aba",
+      "name": "Daniil Makarov",
+      "book": "White Fang",
+      "phone": "787-555-4040"
+    },
+    {
+      "id": "b824",
+      "name": "Daniil Makarov",
+      "book": "White Fang",
+      "phone": "787-555-4040"
+    }
+  ],
   "items": [
     {
       "id": 1,
-      "name": "Sample Item 1"
+      "name": "Sample Task"
     }
   ]
 }

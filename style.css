@@ -1,39 +1,61 @@
+/* General Page Styling */
 body {
-  font-family: sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   padding: 2rem;
   background-color: #f4f4f4;
 }
 
+/* Main container */
 .container {
   background: white;
   padding: 20px;
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#item-list {
+/* List Styling */
+#item-list,
+#contact-list {
   list-style: none;
   padding: 0;
 }
 
+/* List item appearance */
 .list-group-item {
-  padding: 10px;
-  margin: 5px 0;
+  padding: 10px 15px;
+  margin: 8px 0;
   background: #eeeeee;
+  border-radius: 6px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: background-color 0.3s ease;
 }
 
-.delete-btn {
-  background: red;
-  color: white;
-  border: none;
-  padding: 4px 8px;
-  cursor: pointer;
+.list-group-item:hover {
+  background-color: #e2e2e2;
 }
-.delete-btn {
+
+/* Input Fields */
+input.form-control {
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+/* Button: Add Contact or Item */
+button.btn-primary {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+
+/* Delete Button (custom if not using Bootstrap) */
+.delete-btn,
+.btn-danger.btn-sm {
   background-color: transparent;
   color: crimson;
   border: none;
@@ -41,11 +63,12 @@ body {
   font-size: 1.2rem;
   cursor: pointer;
   margin-left: 10px;
-  padding: 2px 8px;
+  padding: 4px 8px;
   border-radius: 4px;
   transition: background-color 0.2s ease;
 }
 
-.delete-btn:hover {
+.delete-btn:hover,
+.btn-danger.btn-sm:hover {
   background-color: #ffe6e6;
 }
